@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%= pestaña %></title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <style>
+            .invertida {
+                filter: invert(100%);
+            }
+            #contenido {
+                margin: 3%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        </style>
+    </head>
+<body>
+    <%- include('./header') %>
+    <div id="contenido">
+        <div id="intro">
+            <h2>GEOEXPLORE: NAVEGANDO SEGURO ENTRE TURISMO Y PREVENCIÓN (BOGOTÁ SEGURA)</h2>
+            <p>Lina Sanchez - Yuri Acuña. Estuudiantes de Ing. Catastral y geodesia</p>
+        </div>
+
+        <div id="texto1">
+            <p>GEOEXPLORE: NAVEGANDO SEGURO ENTRE TURISMO Y PREVENCIÓN (BOGOTÁ SEGURA) es un proyecto que busca integrar la información geográfica de la ciudad con las opciones de turismo y prevención. El objetivo es ofrecer a los visitantes y habitantes de Bogotá una herramienta que les permita conocer los lugares de interés turístico, así como los niveles de amenaza por movimientos en masa que pueden afectar su seguridad. Para ello, se utiliza la información de las zonas de interés turístico, las señales informativas turísticas y el mapa de amenaza por movimientos en masa urbano, que se presentan en una plataforma web interactiva y fácil de usar. De esta manera, se pretende fomentar el turismo responsable y consciente, así como la cultura de prevención y gestión del riesgo en la ciudad.
+            </p> <p>Comprender la remoción en masa en zonas turísticas en la ciudad de Bogotá es crucial para garantizar la seguridad de los visitantes, mitigar riesgos de accidentes, planificar de manera sostenible la ciudad, al igual que ofrecer una experiencia agradable a los turistas locales, nacionales e internacionales, y así responder eficazmente a emergencias, cumplir con regulaciones, contribuyendo a la seguridad, conservación y desarrollo responsable de estas áreas.
+            </p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-5">
+            <div class="col">
+            <div class="card" style="width: 18rem;">    
+                <img src="/img/masa.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Amenaza Movimientos en Masa Urbano y Zonas de Interés Turístico</h5>
+                    <p class="card-text">Área que Identifica los niveles de amenaza por movimientos en masa como deslizamiento, reptación, 
+                        flujos de material, caídas y volcamiento de material, determinando condicionamientos al uso del suelo en 
+                        las zonas definidas en amenaza media y alta. Su cobertura es el área urbana del Distrito Capital. </p>
+                    <a href="/map5" class="btn btn-primary">Ver Mapa</a>
+                </div>
+            </div>
+            </div>
+            
+            <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="/img/señales.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Señales Informativas Turísticas</h5>
+                    <p class="card-text">Es un signo o elemento visual generalmente de tipo vertical, dispuestos para orientar o precisar la ubicación de un atractivo y/o sitio de interés turístico de la ciudad. Sirve a viajeros y ciudadanía en general para orientarse, en función de sus motivaciones, intereses y necesidades particulares.</p>
+                    <a href="/map10" class="btn btn-primary">Mas información</a>
+                </div>
+            </div>
+            </div>
+            
+            <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="/img/interes.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Zonas Interés Turístico y Señales Informativas</h5>
+                    <p class="card-text">Nivel de información que representa la ubicación y forma de zonas definidas de interés turístico, estas son áreas de ciudad que concentran usos de suelo normativamente establecidos y relacionados directamente con las actividades soporte para el desarrollo de la actividad turística, tales como la planta turística principal y complementaria, la existencia de espacios públicos de permanencia (parques, plazas y plazoletas), así como de la localización de atractivos turísticos de jerarquía nacional e internacional, e infraestructuras, que permiten desarrollar la puesta en valor de las mismas, y la consolidación del turismo en la ciudad.</p>
+                    <a href="/map11" class="btn btn-primary">¡Clic Aquí!</a>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <%- include('./pie') %>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
